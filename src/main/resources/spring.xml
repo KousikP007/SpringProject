@@ -6,11 +6,13 @@
 <!--<bean id="alien" class="org.example.Alien" scope="prototype">-->
 
     <bean id="alien" class="org.example.Alien">
-        <!--setter injection-->
+        <!--setter injection for primitive type-->
         <property name="age" value="20"></property>
+        <!--ref attribute for reference injection for object type-->
+        <property name="lap" ref="lap1"></property>
 
     </bean>
-    <bean id="lap" class="org.example.Laptop">
+    <bean id="lap1" class="org.example.Laptop">
 
     </bean>
 
