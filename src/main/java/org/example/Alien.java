@@ -2,20 +2,20 @@ package org.example;
 
 public class Alien {
     private int age;
-    private Laptop lap;
+    private Computer com;
     public Alien(){
         System.out.println("in alien object");
     }
 
-    public Alien(Laptop lap, int age) {
+    /*public Alien(Laptop lap, int age) {
         System.out.println("in constructor");
         this.lap = lap;
         this.age = age;
-    }
+    }*/
 
     public void coding(){
         System.out.println("coding....");
-        lap.compile();
+        com.compile();
     }
 
     public int getAge() {
@@ -26,11 +26,11 @@ public class Alien {
         this.age = age;
     }
 
-    public Laptop getLap() {
-        return lap;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLap(Laptop lap) {
-        this.lap = lap;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 }
